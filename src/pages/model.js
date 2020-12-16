@@ -122,14 +122,30 @@ const Model = ({ imageDetails }) => {
             <motion.div className="model">
               <motion.span className="last" variants={lastName}>
                 <motion.span variants={letter}>P</motion.span>
-                <motion.span variants={letter}>o</motion.span>
-                <motion.span variants={letter}>r</motion.span>
-                <motion.span variants={letter}>t</motion.span>
-                <motion.span variants={letter}>f</motion.span>
-                <motion.span variants={letter}>o</motion.span>
-                <motion.span variants={letter}>l</motion.span>
-                <motion.span variants={letter}>i</motion.span>
-                <motion.span variants={letter}>o</motion.span>
+                <motion.span class="is-lowercase" variants={letter}>
+                  o
+                </motion.span>
+                <motion.span class="is-lowercase" variants={letter}>
+                  r
+                </motion.span>
+                <motion.span class="is-lowercase" variants={letter}>
+                  t
+                </motion.span>
+                <motion.span class="is-lowercase" variants={letter}>
+                  f
+                </motion.span>
+                <motion.span class="is-lowercase" variants={letter}>
+                  o
+                </motion.span>
+                <motion.span class="is-lowercase" variants={letter}>
+                  l
+                </motion.span>
+                <motion.span class="is-lowercase" variants={letter}>
+                  i
+                </motion.span>
+                <motion.span class="is-lowercase" variants={letter}>
+                  o
+                </motion.span>
               </motion.span>
               <motion.h1
                 class="title has-text-white is-1"
@@ -268,92 +284,101 @@ const Model = ({ imageDetails }) => {
         <div class="title has-text-white">Artworks</div>
         <div class="columns is-multiline">
           <div class="column is-4">
-            <motion.div
-              whileHover={{ scale: 1, y: -20 }}
-              class="card"
-              style={{
-                width: `${100}%`,
-                backgroundImage: `linear-gradient(
+            <a
+              href="https://spotify-connect-platform.vercel.app"
+              target="_blank"
+            >
+              <motion.div
+                whileHover={{ scale: 1, y: -20 }}
+                class="card"
+                style={{
+                  width: `${100}%`,
+                  backgroundImage: `linear-gradient(
             to bottom,
             rgba(243, 121, 221, 0),
             rgba(28, 29, 29, 0.9) 120%
             ),url(${require("../images/spotify-connect-screenshot2.png")})`,
-                height: 640,
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-                backgroundRepeat: "no-repeat",
-              }}
-            >
-              <div
-                class="card-content"
-                style={{ position: "absolute", bottom: 0 }}
+                  height: 640,
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                  backgroundRepeat: "no-repeat",
+                }}
               >
-                <h1 class="title has-text-white">Spotify Connect</h1>
-                <div class="content has-text-white">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                <div
+                  class="card-content"
+                  style={{ position: "absolute", bottom: 0 }}
+                >
+                  <h1 class="title has-text-white">Spotify Connect</h1>
+                  <div class="content has-text-white">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                  </div>
                 </div>
-              </div>
-            </motion.div>
+              </motion.div>
+            </a>
           </div>
 
           <div class="column is-4">
-            <motion.div
-              whileHover={{ scale: 1, y: -20 }}
-              class="card "
-              style={{
-                width: `${100}%`,
-                backgroundImage: `linear-gradient(
+            <a href="https://rex-taiwan.github.io/vueinstagram" target="_blank">
+              <motion.div
+                whileHover={{ scale: 1, y: -20 }}
+                class="card "
+                style={{
+                  width: `${100}%`,
+                  backgroundImage: `linear-gradient(
             to bottom,
             rgba(243, 121, 221, 0),
             rgba(28, 29, 29, 0.9)
             ),url(${require("../images/vue-project.png")})`,
-                height: 640,
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-                backgroundRepeat: "no-repeat",
-              }}
-            >
-              <div
-                class="card-content"
-                style={{ position: "absolute", bottom: 0 }}
+                  height: 640,
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                  backgroundRepeat: "no-repeat",
+                }}
               >
-                <h1 class="title has-text-white">Vueinstagram</h1>
-                <div class="content has-text-white">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                <div
+                  class="card-content"
+                  style={{ position: "absolute", bottom: 0 }}
+                >
+                  <h1 class="title has-text-white">Vueinstagram</h1>
+                  <div class="content has-text-white">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                  </div>
                 </div>
-              </div>
-            </motion.div>
+              </motion.div>
+            </a>
           </div>
           <div class="column is-4">
-            <motion.div
-              whileHover={{ scale: 1, y: -20 }}
-              class="card "
-              style={{
-                width: `${100}%`,
-                backgroundImage: `linear-gradient(
+            <a href="https://rex-taiwan.github.io/vueinstagram" target="_blank">
+              <motion.div
+                whileHover={{ scale: 1, y: -20 }}
+                class="card "
+                style={{
+                  width: `${100}%`,
+                  backgroundImage: `linear-gradient(
             to bottom,
             rgba(243, 121, 221, 0),
             rgba(28, 29, 29, 0.9)
             ),url(${require("../images/flote-project.png")})`,
-                height: 640,
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-                backgroundRepeat: "no-repeat",
-              }}
-            >
-              <div
-                class="card-content"
-                style={{ position: "absolute", bottom: 0 }}
+                  height: 640,
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                  backgroundRepeat: "no-repeat",
+                }}
               >
-                <h1 class="title has-text-white">Spotify Connect</h1>
-                <div class="content has-text-white">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                <div
+                  class="card-content"
+                  style={{ position: "absolute", bottom: 0 }}
+                >
+                  <h1 class="title has-text-white">Flote</h1>
+                  <div class="content has-text-white">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                  </div>
                 </div>
-              </div>
-            </motion.div>
+              </motion.div>
+            </a>
           </div>
         </div>
       </div>
