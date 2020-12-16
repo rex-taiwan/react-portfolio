@@ -49,7 +49,6 @@ export const Example = () => {
         initial={false}
         animate={isOpen ? "open" : "closed"}
         custom={height}
-        ref={containerRef}
       >
         <MenuToggle isOpen={isOpen} toggle={() => toggleOpen()} />
       </motion.div>
